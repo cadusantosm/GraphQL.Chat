@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="GraphQL\Types" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="App.Metrics.AspNetCore.Mvc" Version="3.2.0" />
     <PackageReference Include="App.Metrics.Extensions.Hosting" Version="3.2.0" />
     <PackageReference Include="HotChocolate.AspNetCore" Version="10.4.2" />

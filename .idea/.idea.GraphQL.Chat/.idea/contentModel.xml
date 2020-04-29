@@ -14,7 +14,12 @@
         <e p="GraphQL" t="Include">
           <e p="ChatMutation.cs" t="Include" />
           <e p="ChatQuery.cs" t="Include" />
-          <e p="Types" t="Include" />
+          <e p="Types" t="Include">
+            <e p="ChatMessageAuthorType.cs" t="Include" />
+            <e p="ChatMessageTemplateType.cs" t="Include" />
+            <e p="ChatMessageType.cs" t="Include" />
+            <e p="ChatRoomType.cs" t="Include" />
+          </e>
         </e>
         <e p="GraphQL.Chat.Api.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
