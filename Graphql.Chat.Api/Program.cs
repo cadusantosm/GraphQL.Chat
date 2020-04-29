@@ -1,11 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using Serilog;
 
 namespace Graphql.Chat.Api
 {
@@ -18,9 +13,19 @@ namespace Graphql.Chat.Api
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                .UseSerilog((hostingContext, loggerConfiguration) => loggerConfiguration
+                    .ReadFrom.Configuration(hostingContext.Configuration)
+                    .WriteTo.Console()
+                    .Enrich.FromLogContext()
+                    .Enrich.WithAssemblyName()
+                    .Enrich.WithAssemblyInformationalVersion()
+                )
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.ConfigureAppMetricsHostingConfiguration(options =>
+                        options.MetricsEndpoint = "/internal/metrics");
+                    webBuilder.ConfigureKestrel(options => options.AllowSynchronousIO = true);
                 });
     }
 }

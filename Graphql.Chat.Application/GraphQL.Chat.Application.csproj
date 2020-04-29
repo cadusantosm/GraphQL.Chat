@@ -6,8 +6,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Model\" />
-    <Folder Include="Requests\" />
+    <Compile Remove="Model\**" />
+    <Compile Remove="Requests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Model\**" />
+    <EmbeddedResource Remove="Requests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Model\**" />
+    <None Remove="Requests\**" />
   </ItemGroup>
 
 </Project>
