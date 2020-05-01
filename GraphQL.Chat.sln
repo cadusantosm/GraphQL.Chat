@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphQL.Chat.Api", "Graphql
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphQL.Chat.Application", "Graphql.Chat.Application\GraphQL.Chat.Application.csproj", "{0DC41355-F22F-4EE9-A03D-5565A9D48789}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQL.Chat.Api.Tests", "GraphQL.Chat.Api.Tests\GraphQL.Chat.Api.Tests.csproj", "{475BD784-6890-4076-8DD6-D4DA4855884C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQL.Chat.Application.Tests", "GraphQL.Chat.Application.Tests\GraphQL.Chat.Application.Tests.csproj", "{B2C58128-55A2-4371-8C68-0F3DD58C81C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{0DC41355-F22F-4EE9-A03D-5565A9D48789}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DC41355-F22F-4EE9-A03D-5565A9D48789}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DC41355-F22F-4EE9-A03D-5565A9D48789}.Release|Any CPU.Build.0 = Release|Any CPU
+		{475BD784-6890-4076-8DD6-D4DA4855884C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{475BD784-6890-4076-8DD6-D4DA4855884C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{475BD784-6890-4076-8DD6-D4DA4855884C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{475BD784-6890-4076-8DD6-D4DA4855884C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2C58128-55A2-4371-8C68-0F3DD58C81C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2C58128-55A2-4371-8C68-0F3DD58C81C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2C58128-55A2-4371-8C68-0F3DD58C81C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2C58128-55A2-4371-8C68-0F3DD58C81C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
